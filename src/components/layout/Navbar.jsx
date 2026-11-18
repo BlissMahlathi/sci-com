@@ -11,6 +11,8 @@ const NAV_LINKS = [
   { href: '/about',      label: 'About' },
   { href: '/programmes', label: 'Programmes' },
   { href: '/mentorship', label: 'Mentorship' },
+  { href: '/team',       label: 'Team' },
+  { href: '/gallery',    label: 'Gallery' },
   { href: '/contact',    label: 'Contact' },
 ];
 
@@ -54,8 +56,8 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <Link to="/contact" className="nav-cta">
-                Enrol Now
+              <Link to="/apply" className="nav-cta">
+                Apply Now
               </Link>
             </li>
           </ul>
@@ -106,12 +108,12 @@ const Navbar = () => {
           </Link>
         ))}
         <Link
-          to="/contact"
+          to="/apply"
           className="btn-primary"
           style={{ marginTop: '1rem', justifyContent: 'center' }}
           tabIndex={menuOpen ? 0 : -1}
         >
-          Enrol Now
+          Apply Now
         </Link>
       </nav>
     </>

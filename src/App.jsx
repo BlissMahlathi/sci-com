@@ -11,7 +11,10 @@ import CoursePage    from './pages/CoursePage';
 import MentorshipPage from './pages/MentorshipPage';
 import ContactPage   from './pages/ContactPage';
 import GalleryPage   from './pages/GalleryPage';
+import TeamPage      from './pages/TeamPage';
+import ApplyPage     from './pages/ApplyPage';
 import NotFound      from './pages/NotFound';
+import WhatsAppButton from './components/shared/WhatsAppButton';
 
 
 const App = () => {
@@ -39,9 +42,12 @@ const App = () => {
           <Route path="/mentorship"  element={<MentorshipPage />} />
           <Route path="/contact"     element={<ContactPage />} />
           <Route path="/gallery"     element={<GalleryPage />} />
+          <Route path="/team"        element={<TeamPage />} />
+          <Route path="/apply"       element={<ApplyPage />} />
           <Route path="*"            element={<NotFound />} />
         </Routes>
         <Footer />
+        <WhatsAppButton />
       </div>
     </>
   );

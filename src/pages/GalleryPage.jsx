@@ -1,16 +1,15 @@
-import SectionHeader from '../components/shared/SectionHeader';
+import PageHero from '../components/shared/PageHero';
 import { RiImageLine } from 'react-icons/ri';
 
 const GalleryPage = () => (
-  <main style={{ paddingTop: '5rem' }}>
-    <section className="section" aria-labelledby="gallery-title">
+  <main>
+    <PageHero
+      eyebrow="Gallery"
+      title={<span>Learning in <span className="highlight">Action</span></span>}
+      subtitle="A look at the professional environments and focused study behind our programmes."
+    />
+    <section className="section">
       <div className="container">
-        <SectionHeader
-          eyebrow="Gallery"
-          title={<span id="gallery-title">Learning in <span style={{ color: 'var(--red)' }}>Action</span></span>}
-          subtitle="A look at the professional environments and focused study behind our programmes."
-        />
-
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, 1fr)',

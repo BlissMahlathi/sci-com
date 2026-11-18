@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import {
   RiLinkedinBoxLine,
   RiMailLine,
-  RiPhoneLine,
   RiMapPin2Line,
 } from 'react-icons/ri';
 import logo from '../../assets/logo.jpg';
@@ -12,6 +11,8 @@ const QUICK_LINKS = [
   { href: '/about',      label: 'About Us' },
   { href: '/programmes', label: 'Programmes' },
   { href: '/mentorship', label: 'Mentorship' },
+  { href: '/team',       label: 'Team' },
+  { href: '/gallery',    label: 'Gallery' },
   { href: '/contact',    label: 'Contact' },
 ];
 
@@ -47,7 +48,7 @@ const Footer = () => (
             >
               <RiLinkedinBoxLine />
             </a>
-            <a href="mailto:info@scicomacademy.co.za" aria-label="Email us" id="footer-email-icon">
+            <a href="mailto:info@sci-comacademy.com" aria-label="Email us" id="footer-email-icon">
               <RiMailLine />
             </a>
           </div>
@@ -79,8 +80,8 @@ const Footer = () => (
           <ul role="list">
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <RiMailLine style={{ color: 'var(--red)', flexShrink: 0 }} aria-hidden="true" />
-              <a href="mailto:info@scicomacademy.co.za" id="footer-email-link">
-                info@scicomacademy.co.za
+              <a href="mailto:info@sci-comacademy.com" id="footer-email-link">
+                info@sci-comacademy.com
               </a>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

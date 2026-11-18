@@ -48,7 +48,7 @@ const CallToAction = () => {
           </div>
 
           <div className="cta-actions">
-            <Link to="/contact" className="btn-primary" id="cta-register-btn">
+            <Link to="/apply" className="btn-primary" id="cta-register-btn">
               Register Now <RiArrowRightLine />
             </Link>
           </div>
