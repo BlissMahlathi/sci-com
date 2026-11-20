@@ -25,7 +25,7 @@ const ContactPage = () => (
         <div className="contact-details contact-details-three">
           <a
             className="contact-detail-card contact-whatsapp-card"
-            href="https://wa.me/27637533950?text=Hello%20Sci-Com%20Academy%2C%20I%20would%20like%20to%20ask%20about%20your%20training."
+            href="https://wa.me/27762861868?text=Hello%20Sci-Com%20Academy%2C%20I%20would%20like%20to%20ask%20about%20your%20training."
             target="_blank"
             rel="noopener noreferrer"
             id="contact-whatsapp"
@@ -33,25 +33,25 @@ const ContactPage = () => (
             <RiWhatsappLine aria-hidden="true" />
             <div>
               <p>WhatsApp</p>
-              <strong>063 753 3950</strong>
+              <strong>+27 76 286 1868</strong>
               <span>Message the academy directly on WhatsApp.</span>
             </div>
           </a>
 
-          <a className="contact-detail-card" href="tel:+27849160302" id="contact-phone">
+          <a className="contact-detail-card" href="tel:+27762861868" id="contact-phone">
             <RiPhoneLine aria-hidden="true" />
             <div>
               <p>Contact us</p>
-              <strong>+27 84 916 0302</strong>
+              <strong>+27 76 286 1868</strong>
               <span>Call to discuss your training.</span>
             </div>
           </a>
 
-          <a className="contact-detail-card" href="mailto:info@sci-comacademy.com" id="contact-email">
+          <a className="contact-detail-card" href="mailto:ScicomAcademy1@gmail.com" id="contact-email">
             <RiMailLine aria-hidden="true" />
             <div>
               <p>Email</p>
-              <strong>info@sci-comacademy.com</strong>
+              <strong>ScicomAcademy1@gmail.com</strong>
               <span>Send your enquiry by email.</span>
             </div>
           </a>

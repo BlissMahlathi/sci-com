@@ -3,6 +3,7 @@ import {
   RiLinkedinBoxLine,
   RiMailLine,
   RiMapPin2Line,
+  RiPhoneLine,
 } from 'react-icons/ri';
 import logo from '../../assets/logo.jpg';
 
@@ -48,7 +49,7 @@ const Footer = () => (
             >
               <RiLinkedinBoxLine />
             </a>
-            <a href="mailto:info@sci-comacademy.com" aria-label="Email us" id="footer-email-icon">
+            <a href="mailto:ScicomAcademy1@gmail.com" aria-label="Email us" id="footer-email-icon">
               <RiMailLine />
             </a>
           </div>
@@ -80,8 +81,14 @@ const Footer = () => (
           <ul role="list">
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <RiMailLine style={{ color: 'var(--red)', flexShrink: 0 }} aria-hidden="true" />
-              <a href="mailto:info@sci-comacademy.com" id="footer-email-link">
-                info@sci-comacademy.com
+              <a href="mailto:ScicomAcademy1@gmail.com" id="footer-email-link">
+                ScicomAcademy1@gmail.com
+              </a>
+            </li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <RiPhoneLine style={{ color: 'var(--red)', flexShrink: 0 }} aria-hidden="true" />
+              <a href="tel:+27762861868" style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>
+                +27 76 286 1868
               </a>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
