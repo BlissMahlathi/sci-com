@@ -1,41 +1,8 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {
-  RiGroupLine,
-  RiBookOpenLine,
-  RiMapPin2Line,
-  RiAwardLine,
-} from 'react-icons/ri';
 
 gsap.registerPlugin(ScrollTrigger);
-
-const STATS = [
-  {
-    icon: <RiGroupLine aria-hidden="true" />,
-    number: 500,
-    suffix: '+',
-    label: 'Learners Supported',
-  },
-  {
-    icon: <RiBookOpenLine aria-hidden="true" />,
-    number: 12,
-    suffix: '+',
-    label: 'Technical Topics',
-  },
-  {
-    icon: <RiAwardLine aria-hidden="true" />,
-    number: 3,
-    suffix: '',
-    label: 'Expert Mentors',
-  },
-  {
-    icon: <RiMapPin2Line aria-hidden="true" />,
-    number: 4,
-    suffix: '+',
-    label: 'Years Active',
-  },
-];
 
 const StatsCounter = () => {
   const sectionRef = useRef(null);
@@ -91,9 +58,11 @@ const StatsCounter = () => {
   return (
     <section className="stats-section" id="stats" ref={sectionRef} aria-label="Key statistics">
       <div className="stats-grid" role="list">
-        {STATS.map(({ icon, number, suffix, label }, i) => (
+        {STAT.map(({ icon:Icon, number, suffix, label }, i) => (
           <div className="stat-item" key={label} role="listitem">
-            <div className="stat-icon">{icon}</div>
+            <div className="stat-icon">
+              <Icon aria-hidden="true" />
+            </div>
             <span
               className="stat-number"
               ref={el => (numberRefs.current[i] = el)}

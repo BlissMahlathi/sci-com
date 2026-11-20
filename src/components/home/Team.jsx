@@ -3,29 +3,10 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { RiUserLine } from 'react-icons/ri';
 import SectionHeader from '../shared/SectionHeader';
+import { TEAM } from '../../contents/index';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TEAM = [
-  {
-    id: 'godfrey',
-    name: 'Godfrey Monama',
-    title: 'Head Tutor',
-    bio: 'BSc. Mining Engineering (Hons). SCO passed at first attempt. Passed RMC P1 and P2 with distinctions. Blasting certificate holder. Deep and shallow conventional mining experience. 5+ years tutoring experience.',
-  },
-  {
-    id: 'fumani',
-    name: 'Fumani Vukeya',
-    title: 'Assistant Tutor',
-    bio: 'SCO theory passed at first attempt. SCO theory top student Oct 2024. BSc. Geohydrology/Geology (Hons). Surface geotechnical and conventional mining experience. SANIRE Symposium presenter 2026.',
-  },
-  {
-    id: 'tshego',
-    name: 'Tshego Rampedi',
-    title: 'Assistant Tutor',
-    bio: 'SCO passed at first attempt. BSc. Mining Engineering (Hons). RMC Paper 1 top student May 2023. SANIRE Rockstar of Q3 2023. Massive mining and conventional mining experience.',
-  },
-];
 
 const Team = () => {
   const sectionRef = useRef(null);
@@ -72,6 +53,7 @@ const Team = () => {
               <h3 className="team-name">{name}</h3>
               <p className="team-title">{title}</p>
               <p className="team-bio">{bio}</p>
+              
             </div>
           ))}
         </div>

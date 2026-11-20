@@ -18,7 +18,7 @@ import WhatsAppButton from './components/shared/WhatsAppButton';
 
 
 const App = () => {
-  // Show intro only if session hasn't seen it yet
+  
   const alreadySeen = typeof sessionStorage !== 'undefined' &&
     sessionStorage.getItem('scicom_intro_done');
 
@@ -32,7 +32,6 @@ const App = () => {
     <>
       {showIntro && <IntroScreen onComplete={handleIntroComplete} />}
 
-      {/* Site renders underneath intro; becomes visible when intro slides up */}
       <div style={{ visibility: showIntro ? 'hidden' : 'visible' }}>
         <Navbar />
         <Routes>

@@ -6,6 +6,8 @@ import {
   RiWhatsappLine,
 } from 'react-icons/ri';
 import PageHero from '../components/shared/PageHero';
+import { contactInfo , bankInfo} from '../contents/index';
+
 
 const ContactPage = () => (
   <main>
@@ -42,7 +44,7 @@ const ContactPage = () => (
             <RiPhoneLine aria-hidden="true" />
             <div>
               <p>Contact us</p>
-              <strong>+27 76 286 1868</strong>
+              <strong>{contactInfo[0].PhoneNumber}</strong>
               <span>Call to discuss your training.</span>
             </div>
           </a>
@@ -51,7 +53,7 @@ const ContactPage = () => (
             <RiMailLine aria-hidden="true" />
             <div>
               <p>Email</p>
-              <strong>ScicomAcademy1@gmail.com</strong>
+              <strong>{contactInfo[1].Email}</strong>
               <span>Send your enquiry by email.</span>
             </div>
           </a>
@@ -60,9 +62,9 @@ const ContactPage = () => (
         <aside className="contact-banking-card" aria-labelledby="banking-title">
           <h2 id="banking-title">Banking details</h2>
           <dl>
-            <div><dt>Bank</dt><dd>First National Bank</dd></div>
-            <div><dt>Acc No</dt><dd>63210282941</dd></div>
-            <div><dt>Branch code</dt><dd>250655</dd></div>
+            <div><dt>Bank</dt><dd>{bankInfo.BankType}</dd></div>
+            <div><dt>Acc No</dt><dd>{bankInfo.AcoountNumber}</dd></div>
+            <div><dt>Branch code</dt><dd>{bankInfo.BranchCode}</dd></div>
           </dl>
         </aside>
 

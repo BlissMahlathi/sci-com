@@ -3,44 +3,13 @@ import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
-  RiUserStarLine,
-  RiFileListLine,
-  RiChatQuoteLine,
-  RiLightbulbLine,
-  RiCalendarCheckLine,
   RiArrowRightLine,
 } from 'react-icons/ri';
 import SectionHeader from '../shared/SectionHeader';
-
+import { BENEFITS } from '../../contents/index';  
 gsap.registerPlugin(ScrollTrigger);
 
-const BENEFITS = [
-  {
-    icon: <RiUserStarLine aria-hidden="true" />,
-    title: 'Career Guidance',
-    desc: 'Navigate your path from production into rock engineering with expert direction.',
-  },
-  {
-    icon: <RiFileListLine aria-hidden="true" />,
-    title: 'Exam Preparation',
-    desc: 'Personalised support for SCO and RMC Paper 1 examinations.',
-  },
-  {
-    icon: <RiChatQuoteLine aria-hidden="true" />,
-    title: 'Registration Assistance',
-    desc: 'Understand the registration process for professional examinations.',
-  },
-  {
-    icon: <RiLightbulbLine aria-hidden="true" />,
-    title: 'Technical Q&A',
-    desc: 'Ask questions and get answers from people who work in the industry.',
-  },
-  {
-    icon: <RiCalendarCheckLine aria-hidden="true" />,
-    title: 'Study Planning',
-    desc: 'Structured study plans aligned to examination timelines.',
-  },
-];
+
 
 const Mentorship = () => {
   const sectionRef = useRef(null);
@@ -111,9 +80,11 @@ const Mentorship = () => {
           {/* Right: Benefits grid */}
           <div>
             <div className="mentorship-benefits">
-              {BENEFITS.map(({ icon, title, desc }) => (
+              {BENEFITS.map(({ icon: Icon, title, desc }) => (
                 <div className="mentorship-benefit" key={title}>
-                  <div className="mentorship-benefit-icon">{icon}</div>
+                  <div className="mentorship-benefit-icon">
+                    <Icon aria-hidden="true" />
+                  </div>
                   <h4>{title}</h4>
                   <p>{desc}</p>
                 </div>

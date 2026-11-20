@@ -3,35 +3,15 @@ import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
-  RiStackLine,
-  RiCompassLine,
   RiArrowRightLine,
 } from 'react-icons/ri';
 import { Badge } from '../ui/badge';
 import SectionHeader from '../shared/SectionHeader';
+import { PROGRAMMES } from '../../contents/index';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PROGRAMMES = [
-  {
-    id: 'sco',
-    icon: <RiStackLine />,
-    title: 'SCO',
-    desc: 'Structured preparation for Strata Control Officer candidates through focused online classes, guided study and exam support.',
-    details: ['15 days online classes', '17 Aug – 4 Sep 2026'],
-    price: 'R5 000.00',
-    examBadge: true,
-  },
-  {
-    id: 'rmc',
-    icon: <RiCompassLine />,
-    title: 'RMC Paper 1',
-    desc: 'Focused Rock Mechanics Paper 1 preparation and guided study for candidates who want a structured route to exam readiness.',
-    details: ['10 days online classes', '7 – 18 Sep 2026'],
-    price: 'R20 000.00',
-    examBadge: true,
-  },
-];
+
 
 const Programmes = () => {
   const sectionRef = useRef(null);
@@ -69,9 +49,11 @@ const Programmes = () => {
         />
 
         <div className="programmes-grid">
-          {PROGRAMMES.map(({ id, icon, title, desc, details, price, examBadge }) => (
+          {PROGRAMMES.map(({ id, icon:Icon, title, desc, details, price, examBadge }) => (
             <div className="programme-card" key={id} id={`programme-${id}`}>
-              <div className="programme-icon">{icon}</div>
+              <div className="programme-icon">
+                <Icon size={32} />
+              </div>
               <h3 className="programme-title">{title}</h3>
               <p className="programme-desc">{desc}</p>
 

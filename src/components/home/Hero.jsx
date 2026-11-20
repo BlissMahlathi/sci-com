@@ -45,34 +45,29 @@ const Hero = () => {
     <section className="hero grid-bg" id="hero" ref={heroRef} aria-label="Hero section">
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ maxWidth: '720px' }}>
-          {/* Eyebrow */}
           <div className="hero-eyebrow" ref={eyebrowRef} aria-hidden="true">
             <RiShieldCheckLine />
             Strata Control · Rock Mechanics · Exam Preparation
           </div>
-
-          {/* H1 */}
+  
           <h1 className="hero-title" ref={h1Ref}>
             Engineering Knowledge.<br />
             Safer <span className="highlight">Ground.</span><br />
             Stronger Careers.
           </h1>
 
-          {/* Subtitle */}
           <p className="hero-subtitle" ref={subRef}>
             Sci-Com Academy provides accessible online education, mentorship and technical support
             for aspiring and practising mining professionals preparing for Strata Control and Rock
             Mechanics examinations across South Africa.
           </p>
 
-          {/* CTAs */}
           <div className="hero-ctas" ref={ctasRef}>
             <Link to="/programmes" className="btn-primary" id="hero-explore-btn">
               Explore Programmes <RiArrowRightLine />
             </Link>
           </div>
 
-          {/* Badges */}
           <div className="hero-badge-row" ref={badgesRef}>
             {BADGES.map(({ icon, label }) => (
               <span className="hero-badge" key={label}>
@@ -82,8 +77,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
 
     </section>
   );
