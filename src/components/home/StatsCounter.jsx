@@ -11,7 +11,7 @@ const StatsCounter = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      STATS.forEach((stat, i) => {
+      STAT.forEach((stat, i) => {
         const el = numberRefs.current[i];
         if (!el) return;
 
